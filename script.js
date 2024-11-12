@@ -117,7 +117,6 @@ let epler= 34;
 
 let storeOpen = true;
 console.log("åpen eller ikke?", storeOpen);
-console.log(typeof storeOpen);
 
 //oppgave 2//
 
@@ -130,11 +129,13 @@ function minFørsteFunksjon (a, b) {
 let firstFunk = minFørsteFunksjon (7, 3)
 let secondFunk = minFørsteFunksjon  (8, 9)
 
-function mittNavn (magnus, eeg){
-  let sum = magnus + eeg
-  console.log (sum)
-  return sum;
+function mittNavn (fornavn,etternavn) {
+  return fornavn + " " + etternavn; 
 }
+
+let navn1 = mittNavn ("Magnus","Eeg");
+
+console.log(navn1);
 
 //Number, String, Boloeon
 
