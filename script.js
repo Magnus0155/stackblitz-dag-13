@@ -110,9 +110,44 @@ BONUS!
 
 //Datatyper
 
+//oppgave 1//
+
+const name = 'fruktButikk';
+let epler= 34;
+
+let storeOpen = true;
+console.log("åpen eller ikke?", storeOpen);
+console.log(typeof storeOpen);
+
+//oppgave 2//
+
+function minFørsteFunksjon (a, b) {
+  let sum = a - b
+  console.log (sum)
+  return sum;
+}
+
+let firstFunk = minFørsteFunksjon (7, 3)
+let secondFunk = minFørsteFunksjon  (8, 9)
+
+function mittNavn (magnus, eeg){
+  let sum = magnus + eeg
+  console.log (sum)
+  return sum;
+}
+
 //Number, String, Boloeon
 
-//Arrays, objects
+const name2 ='Magnus'; 
+let age = 27;
+let isPresent = true; 
+
+//undefined, null kommer op når ting er feil//
+
+console.log()
+
+
+//Arrays, objects ( liste/sted for å lagre verdi)
 
 let passengers = ['Ania Kubow', 'Kevin Powell', 'Simo Edwin', 'Thomas Cargill'];
 
@@ -133,6 +168,43 @@ let flightInfo = {
 
 //Hvordan skrive en funksjon
 
+function addNumbers() {
+  let numberOne = 1
+  let numberTwo = 2
+  let sum = numberOne = numberTwo
+  console.log(sum);
+}
+
 // Argumenter vs parametre
 
+function minusNumbers (a, b) {
+  let sum = a - b
+  console.log (sum)
+  return sum;
+}
+
+let firstSum = minusNumbers(10, 3)
+let secondSum = minusNumbers (8, 4)
+
 // Hvordan hente inn ting vi skal gjøre noe med
+
+const button = document.querySelector('#showBtn')
+let text = document.querySelector('#text')
+let toggle = document.querySelector ('#toggleCont')
+let toggleCircle = document.querySelector('#toggleCircle')
+
+toggle.addEventListener("click",function() {
+  if(toggleCircle.classList.contains('move')){
+    toggleCircle.classList.remove('move')
+    toggleCircle.classList.add('moveBack')
+  } else {
+    toggleCircle.classList.remove('moveBack')
+    toggleCircle.classList.add('move')
+  }
+});
+
+
+button.addEventListener("click", function () {
+  text.classList.toggle('showTextbox');
+  text.classList.toggle('hiddenBox');
+})
